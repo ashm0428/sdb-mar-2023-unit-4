@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Example</title>
+    <style>
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 5px;
+        }
+      </style>
+</head>
+<body>
+    <h1 id="main-header">My TO-DO List</h1>
+    <h3 id = "category">[category here]</h3>
+    <input type="text" id="input-item" placeholder="Enter Item Here..." />
+    <button id="add-item">Add Item</button>
+    <p class="instructions">
+      Click the Add Item button to add a new item to the list below
+    </p>
+    <button id="clear-list">Clear List</button>
+
+    <h2>Items</h2>
+
+    <ul id="todo-list">
+      <li class="todo-items">Dishes</li>
+      <li class="todo-items">Laundry</li>
+      <li class="todo-items">Make Bed - Help</li>
+    </ul>
+
+    <!-- TABLE FOR NOTES -->
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Node List, HTML Collection, Element</th>
+            <th>Single or Multiple</th>
+            <th>Loop through </th>
+        </tr>
+        <tr>
+            <td>getElementbyId()</td>
+            <td>Element</td>
+            <td>Single</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>getElementByClassName()</td>
+            <td>HTML Collection</td>
+            <td>Multiple</td>
+            <td>Yes! - No .forEach()</td>
+        </tr>
+        <tr>
+            <td>getElementsByTagName()</td>
+            <td>HTML Collection</td>
+            <td>Multiple</td>
+            <td>Yes! - NO .forEach()</td>
+        </tr>
+        <tr>
+            <td>querySelector()</td>
+            <td>Element</td>
+            <td>Single</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>querySelectorAll()</td>
+            <td>NodeList</td>
+            <td>Multiple</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    <!-- Linking JS file to HTML Page-->
+    <script src="./events.js"></script>
+    <script src="./index.js"></script>  
+</body>
+</html>
